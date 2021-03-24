@@ -297,10 +297,10 @@ class BarRenderer<D>
       // Positive bars should be rounded towards the positive axis direction.
       // In vertical mode, this is the top. In horizontal mode, this is the
       // right side of the chart for LTR, or the left side for RTL.
-      roundTopLeft = renderingVertically || isRtl;
-      roundTopRight = !isRtl;
-      roundBottomLeft = isRtl;
-      roundBottomRight = !(renderingVertically || isRtl);
+      roundTopLeft = true;
+      roundTopRight = true;
+      roundBottomLeft = true;
+      roundBottomRight = true;        
     }
 
     final barStack = CanvasBarStack(
